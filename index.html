@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <h1 class="text-center">Cadastro de jogadores</h1>
+        <form id="form-cadastro">
+            <div class="form-group">
+                <label for="nome">Nome de usuário</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome de usuário"
+                    maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="nivel">Nível do jogador</label>
+                <input type="number" class="form-control" id="nivel" name="nivel" onchange="ValidaNivel()"
+                    placeholder="Digite seu nível do jogador(1 a 300)" min='1' max='300' required>
+            </div>
+            <div class="form-group">
+                <label for="regiao">Região do Brasil</label>
+                <select class="form-control" id="regiao" name="regiao">
+                    <option value="">Selecione sua região</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Nordeste">Nordeste</option>
+                    <option value="Centro-Oeste">Centro-Oeste</option>
+                    <option value="Sudeste">Sudeste</option>
+                    <option value="Sul">Sul</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="personagem">Escolha um personagem</label>
+                <select class="form-control" id="personagem" name="personagem">
+                    <option value="">Selecione um personagem</option>
+                    <option value="Fogo">Elemental de fogo</option>
+                    <option value="Ar">Elemental de ar</option>
+                    <option value="Água">Elemental de água</option>
+                    <option value="Terra">Elemental de terra</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha"
+                    placeholder="Digite uma senha(no minimo 8 caracteres)" maxlength="30" required>
+            </div>
+            <button type="button" class="btn btn-primary" id="btn-gravar">Gravar</button>
+            <button type="button" class="btn btn-secondary" id="btn-listar">Listar</button>
+            <button type="button" class="btn btn-danger" id="btn-deletar">Deletar</button>
+            <button type="button" class="btn btn-info" id="btn-buscar">Buscar</button>
+            <button type="button" class="btn btn-warning" id="btn-alterar">Alterar</button>
+        </form>
+    </div>
+    <div id="resultado"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

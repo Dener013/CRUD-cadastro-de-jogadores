@@ -1,0 +1,47 @@
+body {
+    background-image: url("fundo.jpg");
+    background-size: cover;
+    min-width: 100vh;
+}
+
+.container {
+    float: left;
+    width: 40%;
+    border: none;
+    background-color: white;
+    padding: 40px;
+    overflow-y: auto;
+    overflow: hidden;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin-top: 5%;
+}
+
+.btn {
+    width: 100%;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.form-control {
+    border: none;
+}
+
+#resultado {
+    margin-top: 5vw;
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+}
+
+#form-cadastro {
+    font-size: 25px;
+}
+
+label {
+    font-weight: bold;
+}
